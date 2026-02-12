@@ -39,9 +39,9 @@ const ImageSchema = new Schema({
         type: String
     },
     author: {
-        type: Schema.Types.ObjectId,
-        ref: "User"
-    },
+    type: String,
+    required: true
+   },
     createdAt: {
         type: Date,
         default: Date.now
